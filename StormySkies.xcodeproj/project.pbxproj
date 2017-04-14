@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCD8F34B1EA163370004253C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD8F34A1EA163370004253C /* AppDelegate.swift */; };
+		BCD8F34D1EA163370004253C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD8F34C1EA163370004253C /* ViewController.swift */; };
+		BCD8F3501EA163370004253C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD8F34E1EA163370004253C /* Main.storyboard */; };
+		BCD8F3521EA163370004253C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCD8F3511EA163370004253C /* Assets.xcassets */; };
+		BCD8F3551EA163370004253C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD8F3531EA163370004253C /* LaunchScreen.storyboard */; };
+		BCD8F3601EA163370004253C /* StormySkiesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD8F35F1EA163370004253C /* StormySkiesUITests.swift */; };
+		BCD8F36B1EA164F20004253C /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD8F36A1EA164F20004253C /* CurrentWeather.swift */; };
+		BCD8F36D1EA1669F0004253C /* WeatherIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD8F36C1EA1669F0004253C /* WeatherIcon.swift */; };
+		BCD8F36F1EA16A160004253C /* CurrentWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD8F36E1EA16A160004253C /* CurrentWeatherViewModel.swift */; };
+		BCD8F3711EA1833A0004253C /* JSONDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD8F3701EA1833A0004253C /* JSONDownloader.swift */; };
+		BCD8F3731EA185A20004253C /* DarkSkyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD8F3721EA185A20004253C /* DarkSkyError.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCD8F35C1EA163370004253C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCD8F33F1EA163370004253C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCD8F3461EA163370004253C;
+			remoteInfo = StormySkies;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BCD8F3471EA163370004253C /* StormySkies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StormySkies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCD8F34A1EA163370004253C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BCD8F34C1EA163370004253C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BCD8F34F1EA163370004253C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCD8F3511EA163370004253C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCD8F3541EA163370004253C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BCD8F3561EA163370004253C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCD8F35B1EA163370004253C /* StormySkiesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StormySkiesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCD8F35F1EA163370004253C /* StormySkiesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormySkiesUITests.swift; sourceTree = "<group>"; };
+		BCD8F3611EA163370004253C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCD8F36A1EA164F20004253C /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		BCD8F36C1EA1669F0004253C /* WeatherIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherIcon.swift; sourceTree = "<group>"; };
+		BCD8F36E1EA16A160004253C /* CurrentWeatherViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeatherViewModel.swift; sourceTree = "<group>"; };
+		BCD8F3701EA1833A0004253C /* JSONDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDownloader.swift; sourceTree = "<group>"; };
+		BCD8F3721EA185A20004253C /* DarkSkyError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkSkyError.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCD8F3441EA163370004253C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD8F3581EA163370004253C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCD8F33E1EA163370004253C = {
+			isa = PBXGroup;
+			children = (
+				BCD8F3491EA163370004253C /* StormySkies */,
+				BCD8F35E1EA163370004253C /* StormySkiesUITests */,
+				BCD8F3481EA163370004253C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BCD8F3481EA163370004253C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCD8F3471EA163370004253C /* StormySkies.app */,
+				BCD8F35B1EA163370004253C /* StormySkiesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCD8F3491EA163370004253C /* StormySkies */ = {
+			isa = PBXGroup;
+			children = (
+				BCD8F34A1EA163370004253C /* AppDelegate.swift */,
+				BCD8F34C1EA163370004253C /* ViewController.swift */,
+				BCD8F3701EA1833A0004253C /* JSONDownloader.swift */,
+				BCD8F3721EA185A20004253C /* DarkSkyError.swift */,
+				BCD8F36A1EA164F20004253C /* CurrentWeather.swift */,
+				BCD8F36E1EA16A160004253C /* CurrentWeatherViewModel.swift */,
+				BCD8F36C1EA1669F0004253C /* WeatherIcon.swift */,
+				BCD8F34E1EA163370004253C /* Main.storyboard */,
+				BCD8F3511EA163370004253C /* Assets.xcassets */,
+				BCD8F3531EA163370004253C /* LaunchScreen.storyboard */,
+				BCD8F3561EA163370004253C /* Info.plist */,
+			);
+			path = StormySkies;
+			sourceTree = "<group>";
+		};
+		BCD8F35E1EA163370004253C /* StormySkiesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BCD8F35F1EA163370004253C /* StormySkiesUITests.swift */,
+				BCD8F3611EA163370004253C /* Info.plist */,
+			);
+			path = StormySkiesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCD8F3461EA163370004253C /* StormySkies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCD8F3641EA163370004253C /* Build configuration list for PBXNativeTarget "StormySkies" */;
+			buildPhases = (
+				BCD8F3431EA163370004253C /* Sources */,
+				BCD8F3441EA163370004253C /* Frameworks */,
+				BCD8F3451EA163370004253C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StormySkies;
+			productName = StormySkies;
+			productReference = BCD8F3471EA163370004253C /* StormySkies.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCD8F35A1EA163370004253C /* StormySkiesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCD8F3671EA163370004253C /* Build configuration list for PBXNativeTarget "StormySkiesUITests" */;
+			buildPhases = (
+				BCD8F3571EA163370004253C /* Sources */,
+				BCD8F3581EA163370004253C /* Frameworks */,
+				BCD8F3591EA163370004253C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCD8F35D1EA163370004253C /* PBXTargetDependency */,
+			);
+			name = StormySkiesUITests;
+			productName = StormySkiesUITests;
+			productReference = BCD8F35B1EA163370004253C /* StormySkiesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCD8F33F1EA163370004253C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Adam Carter";
+				TargetAttributes = {
+					BCD8F3461EA163370004253C = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 6DZ7S9UU7D;
+						ProvisioningStyle = Automatic;
+					};
+					BCD8F35A1EA163370004253C = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 6DZ7S9UU7D;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BCD8F3461EA163370004253C;
+					};
+				};
+			};
+			buildConfigurationList = BCD8F3421EA163370004253C /* Build configuration list for PBXProject "StormySkies" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCD8F33E1EA163370004253C;
+			productRefGroup = BCD8F3481EA163370004253C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCD8F3461EA163370004253C /* StormySkies */,
+				BCD8F35A1EA163370004253C /* StormySkiesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCD8F3451EA163370004253C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD8F3551EA163370004253C /* LaunchScreen.storyboard in Resources */,
+				BCD8F3521EA163370004253C /* Assets.xcassets in Resources */,
+				BCD8F3501EA163370004253C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD8F3591EA163370004253C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCD8F3431EA163370004253C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD8F3731EA185A20004253C /* DarkSkyError.swift in Sources */,
+				BCD8F3711EA1833A0004253C /* JSONDownloader.swift in Sources */,
+				BCD8F34D1EA163370004253C /* ViewController.swift in Sources */,
+				BCD8F36D1EA1669F0004253C /* WeatherIcon.swift in Sources */,
+				BCD8F36F1EA16A160004253C /* CurrentWeatherViewModel.swift in Sources */,
+				BCD8F36B1EA164F20004253C /* CurrentWeather.swift in Sources */,
+				BCD8F34B1EA163370004253C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD8F3571EA163370004253C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD8F3601EA163370004253C /* StormySkiesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCD8F35D1EA163370004253C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCD8F3461EA163370004253C /* StormySkies */;
+			targetProxy = BCD8F35C1EA163370004253C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BCD8F34E1EA163370004253C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCD8F34F1EA163370004253C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BCD8F3531EA163370004253C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCD8F3541EA163370004253C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCD8F3621EA163370004253C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BCD8F3631EA163370004253C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCD8F3651EA163370004253C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6DZ7S9UU7D;
+				INFOPLIST_FILE = StormySkies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.adamcarter.StormySkies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BCD8F3661EA163370004253C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6DZ7S9UU7D;
+				INFOPLIST_FILE = StormySkies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.adamcarter.StormySkies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		BCD8F3681EA163370004253C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 6DZ7S9UU7D;
+				INFOPLIST_FILE = StormySkiesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.adamcarter.StormySkiesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = StormySkies;
+			};
+			name = Debug;
+		};
+		BCD8F3691EA163370004253C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 6DZ7S9UU7D;
+				INFOPLIST_FILE = StormySkiesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.adamcarter.StormySkiesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = StormySkies;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCD8F3421EA163370004253C /* Build configuration list for PBXProject "StormySkies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCD8F3621EA163370004253C /* Debug */,
+				BCD8F3631EA163370004253C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCD8F3641EA163370004253C /* Build configuration list for PBXNativeTarget "StormySkies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCD8F3651EA163370004253C /* Debug */,
+				BCD8F3661EA163370004253C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BCD8F3671EA163370004253C /* Build configuration list for PBXNativeTarget "StormySkiesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCD8F3681EA163370004253C /* Debug */,
+				BCD8F3691EA163370004253C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCD8F33F1EA163370004253C /* Project object */;
+}
