@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BCA2C3C81EA1D25E001615DF /* DarkSkyAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA2C3C71EA1D25E001615DF /* DarkSkyAPIClient.swift */; };
+		BCA2C3CA1EA1D3AD001615DF /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA2C3C91EA1D3AD001615DF /* Coordinate.swift */; };
 		BCD8F34B1EA163370004253C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD8F34A1EA163370004253C /* AppDelegate.swift */; };
 		BCD8F34D1EA163370004253C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD8F34C1EA163370004253C /* ViewController.swift */; };
 		BCD8F3501EA163370004253C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD8F34E1EA163370004253C /* Main.storyboard */; };
@@ -31,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BCA2C3C71EA1D25E001615DF /* DarkSkyAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkSkyAPIClient.swift; sourceTree = "<group>"; };
+		BCA2C3C91EA1D3AD001615DF /* Coordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
 		BCD8F3471EA163370004253C /* StormySkies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StormySkies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCD8F34A1EA163370004253C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCD8F34C1EA163370004253C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 				BCD8F34A1EA163370004253C /* AppDelegate.swift */,
 				BCD8F34C1EA163370004253C /* ViewController.swift */,
 				BCD8F3701EA1833A0004253C /* JSONDownloader.swift */,
+				BCA2C3C71EA1D25E001615DF /* DarkSkyAPIClient.swift */,
+				BCA2C3C91EA1D3AD001615DF /* Coordinate.swift */,
 				BCD8F3721EA185A20004253C /* DarkSkyError.swift */,
 				BCD8F36A1EA164F20004253C /* CurrentWeather.swift */,
 				BCD8F36E1EA16A160004253C /* CurrentWeatherViewModel.swift */,
@@ -219,7 +225,9 @@
 				BCD8F3731EA185A20004253C /* DarkSkyError.swift in Sources */,
 				BCD8F3711EA1833A0004253C /* JSONDownloader.swift in Sources */,
 				BCD8F34D1EA163370004253C /* ViewController.swift in Sources */,
+				BCA2C3C81EA1D25E001615DF /* DarkSkyAPIClient.swift in Sources */,
 				BCD8F36D1EA1669F0004253C /* WeatherIcon.swift in Sources */,
+				BCA2C3CA1EA1D3AD001615DF /* Coordinate.swift in Sources */,
 				BCD8F36F1EA16A160004253C /* CurrentWeatherViewModel.swift in Sources */,
 				BCD8F36B1EA164F20004253C /* CurrentWeather.swift in Sources */,
 				BCD8F34B1EA163370004253C /* AppDelegate.swift in Sources */,
@@ -430,6 +438,7 @@
 				BCD8F3661EA163370004253C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BCD8F3671EA163370004253C /* Build configuration list for PBXNativeTarget "StormySkiesUITests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +447,7 @@
 				BCD8F3691EA163370004253C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

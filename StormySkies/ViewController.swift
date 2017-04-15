@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import CoreLocation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CLLocationManagerDelegate {
+    
+    let locationManager = CLLocationManager()
 
     @IBOutlet weak var currentTemperatureLabel: UILabel!
     @IBOutlet weak var currentHumidityLabel: UILabel!
@@ -20,34 +23,34 @@ class ViewController: UIViewController {
     @IBOutlet weak var apparentTemperatureLabel: UILabel!
     @IBOutlet weak var nearestStormDistanceLabel: UILabel!
     
-    fileprivate let darkSkyApiKey = "bc799f9c215bbe4bd9f3fc497bfde58b"
+    let client = DarkSkyAPIClient()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+       
         
-        let currentWeather = CurrentWeather(temperature: 85.0, apparentTemperature: 87.0, humidity: 0.8, nearestStormDistance: 5.0, precipitationProbability: 0.1, summary: "Hot!", icon: "clear-day")
-        let currentWeatherViewModel = CurrentWeatherViewModel(model: currentWeather)
+        // Ask for Authorisation from the User.
+        self.locationManager.requestAlwaysAuthorization()
         
-        displayWeather(using: currentWeatherViewModel)
+        // For use in foreground
+        self.locationManager.requestWhenInUseAuthorization()
         
-        let base = URL(string: "https://api.darksky.net/forecast/\(darkSkyApiKey)/")
-        guard let forecastUrl = URL(string: "41.2524,-95.9980", relativeTo: base) else { return }
-
-        
-        let configuration = URLSessionConfiguration.default
-        let session = URLSession(configuration: configuration)
-        
-        let request = URLRequest(url: forecastUrl)
-        
-        let dataTask = session.dataTask(with: request) { data, response, error in
-            
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
         }
-        
-        dataTask.resume()
+         getCurrentWeather()
         
     }
-
+    
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        let userLocation:CLLocation = locations[0] as! CLLocation
+        let long = userLocation.coordinate.longitude;
+        let lat = userLocation.coordinate.latitude;
+        //Do What ever you want with it
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -62,16 +65,35 @@ class ViewController: UIViewController {
         currentSummaryLabel.text = viewModel.summary
         currentWeatherIcon.image = viewModel.icon
     }
+    
+    @IBAction func getCurrentWeather() {
+        
+        toggleRefreshAnimation(on: true)
+        
+        //need to update to use var name of the current location to get
+        let coordinate = Coordinate(latitude: 41.2524, longitude: -95.9980)
+        
+        
+        client.getCurrentWeather(at: coordinate) { [unowned self] currentWeather, error in
+            if let currentWeather = currentWeather {
+                let viewModel = CurrentWeatherViewModel(model: currentWeather)
+                self.displayWeather(using: viewModel)
+                self.toggleRefreshAnimation(on: false)
+            }
+        }
+    }
+    
+    func toggleRefreshAnimation(on: Bool) {
+        refreshButton.isHidden = on
+        
+        if on {
+            activityIndicator.startAnimating()
+        } else {
+            activityIndicator.stopAnimating()
+        }
+    }
+    
 }
-
-
-
-
-
-
-
-
-
 
 
 

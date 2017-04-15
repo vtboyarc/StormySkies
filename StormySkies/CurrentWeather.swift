@@ -19,5 +19,35 @@ struct CurrentWeather {
 }
 
 
-
+extension CurrentWeather {
+    
+    //the name in quotes has to match the darksky api docs
+    struct Key {
+        static let temperature = "temperature"
+        static let humidity = "humidity"
+        static let precipitationProbability = "precipProbability"
+        static let summary = "summary"
+        static let icon = "icon"
+        static let nearestStormDistance = "nearestStormDistance"
+        static let apparentTemperature = "apparentTemperature"
+    }
+    
+    init?(json: [String: AnyObject]) {
+        guard let tempValue = json[Key.temperature] as? Double,
+        let humidityValue = json[Key.humidity] as? Double,
+        let precipitationProbabilityValue = json[Key.precipitationProbability] as? Double,
+        let summaryString = json[Key.summary] as? String,
+        let iconString = json[Key.icon] as? String,
+        let nearestStormDistanceValue = json[Key.nearestStormDistance] as? Double,
+            let apparentTemperatureValue = json[Key.apparentTemperature] as? Double else { return nil }
+        
+        self.temperature = tempValue
+        self.humidity = humidityValue
+        self.precipitationProbability = precipitationProbabilityValue
+        self.summary = summaryString
+        self.icon = iconString
+        self.nearestStormDistance = nearestStormDistanceValue
+        self.apparentTemperature = apparentTemperatureValue
+    }
+}
 

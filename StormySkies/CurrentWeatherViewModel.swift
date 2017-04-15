@@ -26,7 +26,7 @@ struct CurrentWeatherViewModel {
         let feelsLikeTemperature = Int(model.apparentTemperature)
         self.apparentTemperature = "\(feelsLikeTemperature)º"
         
-        let humidityPercentValue = Int(model.humidity) * 100
+        let humidityPercentValue = Int(model.humidity * 100)
         self.humidity = "\(humidityPercentValue)%"
         
         let closestStorm = Int(model.nearestStormDistance)
